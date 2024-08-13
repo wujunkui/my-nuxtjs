@@ -1,23 +1,20 @@
 <template>
-    <NConfigProvider>
-        <NLayout class="max-w-[1440px] mx-auto">
-            <NLayoutHeader>
-                <Header></Header>
-            </NLayoutHeader>
-            <NLayoutContent>
+    <NConfigProvider class="bg-coolgray-100">
+        <n-flex justify="center">
+            <Header></Header>
+            <Content>
                 <NuxtPage />
-            </NLayoutContent>
-            <NLayoutFooter>
-                <Footer />
-            </NLayoutFooter>
-        </NLayout>
+            </Content>
+            <Footer />
+        </n-flex>
     </NConfigProvider>
 </template>
 
 <script setup>
-import { NConfigProvider, NLayout, NLayoutHeader, NLayoutContent, NLayoutFooter } from 'naive-ui'
+import { NConfigProvider, NFlex, NLayoutHeader, NLayoutContent, NLayoutFooter } from 'naive-ui'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import Content from './components/Content.vue'
 </script>
 
 <style>

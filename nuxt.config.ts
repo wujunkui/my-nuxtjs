@@ -19,6 +19,9 @@ export default defineNuxtConfig({
   content: {
     // 配置内容模块，支持Markdown
   },
+  css: [
+    '~/assets/css/main.css',
+  ],
 
   // robots: {
   //   // 配置 robots.txt

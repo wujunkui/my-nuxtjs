@@ -7,7 +7,7 @@ useHead({
 <template>
     <main>
         <div>
-            
+         内容
         </div>
     </main>
 </template>

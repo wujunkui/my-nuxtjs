@@ -6,6 +6,9 @@ import {
 } from 'unocss'
 
 export default defineConfig({
+  rules:[
+    ['max-w-content', { 'max-width': 'var(--content-width)' }]
+  ],
   presets: [
     presetUno(),
     presetIcons({

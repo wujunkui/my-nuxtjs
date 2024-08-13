@@ -5,8 +5,8 @@ import { FlashOutline } from '@vicons/ionicons5'
 </script>
 
 <template>
-    <div class="font-bold border">
-        <n-flex justify="center" align="center" class="h-12 max-w-[1440px] mx-auto">
+    <div class="font-bold border px-4 bg-white w-full">
+        <n-flex justify="center" align="center" class="h-12 max-w-content mx-auto">
             <div>室长的个人网站</div>
             <div class="grow"></div>
             <div>

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="h-24 w-full">
+    <div class="h-24 w-full bg-white">
         <span>footer</span>
     </div>
 </template>
