@@ -2,6 +2,7 @@
     <NConfigProvider class="bg-coolgray-100">
         <n-flex justify="center">
             <Header></Header>
+            <Navigation />
             <Content>
                 <NuxtPage />
             </Content>
@@ -15,6 +16,7 @@ import { NConfigProvider, NFlex, NLayoutHeader, NLayoutContent, NLayoutFooter } 
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import Content from './components/Content.vue'
+import Navigation from './components/Navigation.vue'
 </script>
 
 <style>
