@@ -6,14 +6,14 @@ const query: QueryBuilderParams = {
     limit: 10,
     sort:[{date: -1}]
 }
-const { data } = await useAsyncData('home', () => queryContent('/').find())
+const { data } = await useAsyncData('home', () => queryContent('/blogs').find())
 </script>
 
 <template>
-<div>
+<div class="flex flex-col gap-2">
     <!-- <ContentList :query="query" v-slot="{ list }"> -->
-      <div v-for="article in data" :key="article._path">
-        <BlogCard :title="article.title"/>
+      <div v-for="article in data" :key="article._path" >
+        <BlogCard :title="article.title" :description="article.description" />
       </div>
     <!-- </ContentList> -->
 </div>

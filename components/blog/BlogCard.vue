@@ -11,7 +11,7 @@ defineProps<Props>();
 
 <template>
 <div class="rounded">
-    <div class="flex">
+    <div class="flex min-h-32 rounded-md bg-white">
         <img :src="image" alt="">
         <div>
             <h1>{{ title }}</h1>
